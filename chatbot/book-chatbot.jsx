@@ -99,7 +99,7 @@ function BookChatbot() {
                     <div className="flex-1 p-4 overflow-y-auto bg-gray-950">
                         {chatHistory.length === 0 ? (
                             <div className="text-center text-gray-500 my-4 p-6">
-                                <div className="text-5xl mb-4">📚</div>
+                                
                                 <p className="font-medium text-gray-400">Welcome to Book Assistant!</p>
                                 <p className="text-sm mt-2">Ask me about books, authors, recommendations, or reviews.</p>
                             </div>
@@ -136,7 +136,7 @@ function BookChatbot() {
                                 value={prompt}
                                 onChange={(e) => setPrompt(e.target.value)}
                                 placeholder="Ask about books..."
-                                className="flex-1 bg-transparent border-none p-2 text-gray-800 placeholder-gray-400 focus:outline-none"
+                                className="flex-1 bg-transparent border-none p-2 text-black placeholder-gray-400 focus:outline-none"
                                 disabled={disable}
                             />
                             <button

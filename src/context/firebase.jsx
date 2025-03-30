@@ -20,8 +20,7 @@ const firebaseConfig = {
   storageBucket: "freetime-suggestion.firebasestorage.app",
   messagingSenderId: "1095460771717",
   appId: "1:1095460771717:web:5202438d52c5d95e61d6ec",
-  measurementId: "G-XLM29F7DDL",
-  databaseURL: "https://freetime-suggestion-default-rtdb.firebaseio.com",
+  measurementId: "G-XLM29F7DDL"
 };
 
 const provider = new GoogleAuthProvider();

@@ -110,7 +110,7 @@ function MovieChatbot() {
                     <div className="flex-1 p-4 overflow-y-auto bg-gray-950">
                         {chatHistory.length === 0 ? (
                             <div className="text-center text-gray-500 my-4 p-6">
-                                <div className="text-5xl mb-4">🎬</div>
+                                
                                 <p className="font-medium text-gray-400">Welcome to Movie Assistant!</p>
                                 <p className="text-sm mt-2">Ask me about movies, TV shows, recommendations, or actors.</p>
                             </div>
@@ -143,14 +143,14 @@ function MovieChatbot() {
                         )}
                     </div>
 
-                    {/* Chat input */}
+                    
                     <form onSubmit={getResponse} className="p-3 border-t border-gray-800 bg-gray-850 bg-opacity-50 backdrop-blur-sm">
                         <div className="flex gap-2 bg-gray-800 rounded-lg p-1 border border-gray-700">
                             <input
                                 value={prompt}
                                 onChange={(e) => setPrompt(e.target.value)}
                                 placeholder="Ask about movies..."
-                                className="flex-1 bg-transparent border-none p-2 text-gray-800 placeholder-gray-400 focus:outline-none"
+                                className="flex-1 bg-transparent border-none p-2 text-black placeholder-gray-400 focus:outline-none"
                                 disabled={disable}
                             />
                             <button
