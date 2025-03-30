@@ -10,12 +10,12 @@ const Zone = () => {
           <Link to="/movies" className='col-span-1 row-span-1 border-[1px] border-neutral-600 rounded-xl hover:bg-neutral-100 transition-colors duration-300'>
             <div className='flex justify-center p-10'>
               <div className='text-center'>
-                <h1 className='text-3xl font-semibold'>Movies</h1>
+                <h1 className='text-3xl font-semibold'>Movies and Tv-Shows</h1>
                 <p className='mt-4 text-[18px]'>Discover the latest blockbuster movies.</p>
               </div>
             </div>
           </Link>
-          <Link to="/books" className='col-span-1 row-span-1 border-[1px] border-neutral-600 rounded-xl hover:bg-neutral-100 transition-colors duration-300'>
+          <Link to="/Books" className='col-span-1 row-span-1 border-[1px] border-neutral-600 rounded-xl hover:bg-neutral-100 transition-colors duration-300'>
             <div className='flex justify-center p-10'>
               <div className='text-center'>
                 <h1 className='text-3xl font-semibold'>Books</h1>
@@ -31,15 +31,15 @@ const Zone = () => {
               </div>
             </div>
           </Link>
-          <Link to="/restaurants" className='col-span-1 row-span-1 border-[1px] border-neutral-600 rounded-xl hover:bg-neutral-100 transition-colors duration-300'>
+          <Link to="/memes" className='col-span-1 row-span-1 border-[1px] border-neutral-600 rounded-xl hover:bg-neutral-100 transition-colors duration-300'>
             <div className='flex justify-center p-10'>
               <div className='text-center'>
-                <h1 className='text-3xl font-semibold'>Restaurants</h1>
+                <h1 className='text-3xl font-semibold'>Memes</h1>
                 <p className='mt-4 text-[18px]'>Discover the latest blockbuster movies.</p>
               </div>
             </div>
           </Link>
-          <Link to="/theme-parks" className='col-span-1 row-span-1 border-[1px] border-neutral-600 rounded-xl hover:bg-neutral-100 transition-colors duration-300'>
+          <Link to="/ThemePark" className='col-span-1 row-span-1 border-[1px] border-neutral-600 rounded-xl hover:bg-neutral-100 transition-colors duration-300'>
             <div className='flex justify-center p-10'>
               <div className='text-center'>
                 <h1 className='text-3xl font-semibold'>Theme Parks</h1>
@@ -47,10 +47,10 @@ const Zone = () => {
               </div>
             </div>
           </Link>
-          <Link to="/special-events" className='col-span-1 row-span-1 border-[1px] border-neutral-600 rounded-xl hover:bg-neutral-100 transition-colors duration-300'>
+          <Link to="/stories" className='col-span-1 row-span-1 border-[1px] border-neutral-600 rounded-xl hover:bg-neutral-100 transition-colors duration-300'>
             <div className='flex justify-center p-10'>
               <div className='text-center'>
-                <h1 className='text-3xl font-semibold'>Special Events</h1>
+                <h1 className='text-3xl font-semibold'>Stories</h1>
                 <p className='mt-4 text-[18px]'>Discover the latest blockbuster movies.</p>
               </div>
             </div>

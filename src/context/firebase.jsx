@@ -7,10 +7,10 @@ import {
   updateProfile,
   GoogleAuthProvider,
   signInWithPopup,
+  sendPasswordResetEmail, // Import the method for password reset
 } from 'firebase/auth';
 
 const FirebaseContext = createContext(null);
-
 
 const firebaseConfig = {
   apiKey: "AIzaSyCcb07YFeFoLUXT0JE6cV4AWiYU-8LFQAg",
@@ -20,7 +20,7 @@ const firebaseConfig = {
   storageBucket: "freetime-suggestion.firebasestorage.app",
   messagingSenderId: "1095460771717",
   appId: "1:1095460771717:web:5202438d52c5d95e61d6ec",
-  measurementId: "G-XLM29F7DDL"
+  measurementId: "G-XLM29F7DDL",
 };
 
 const provider = new GoogleAuthProvider();
@@ -50,7 +50,16 @@ export const FirebaseProvider = ({ children }) => {
     } catch (error) {
       throw error;
     }
-  };  
+  };
+
+  const sendPasswordReset = async (email) => {
+    try {
+      await sendPasswordResetEmail(auth, email);
+      return "Password reset email sent successfully.";
+    } catch (error) {
+      throw error;
+    }
+  };
 
   const onAuthStateChanged = (callback) => auth.onAuthStateChanged(callback);
 
@@ -62,6 +71,7 @@ export const FirebaseProvider = ({ children }) => {
     loginWithEmailAndPassword,
     updateUserProfile,
     signInWithGoogle,
+    sendPasswordReset, // Expose the password reset function
     onAuthStateChanged,
     signOut
   };
