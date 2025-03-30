@@ -16,7 +16,7 @@ const Movies = () => {
 
   // OMDb API configuration
   const API_KEY = 'bfcdf893';
-  const BASE_URL = 'http://www.omdbapi.com';
+  const BASE_URL = 'https://www.omdbapi.com';
 
   // Add this helper function at the top of your component
   const shuffleArray = (array) => {
