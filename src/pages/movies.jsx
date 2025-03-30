@@ -143,7 +143,7 @@ const Movies = () => {
   };
 
   return (
-    <div className="movies-container min-h-screen bg-gray-900 text-white p-6">
+    <div className="movies-container min-h-screen bg-black text-white p-6">
       {/* Top Movies Section */}
       <div className="top-movies-section max-w-7xl mx-auto mb-12">
         <div className="flex justify-between items-center mb-6">
