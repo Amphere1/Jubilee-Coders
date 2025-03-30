@@ -15,7 +15,7 @@ const Movies = () => {
   const [showsLoading, setShowsLoading] = useState(false);
 
   // OMDb API configuration
-  const API_KEY = '5715dd08';
+  const API_KEY = 'bfcdf893';
   const BASE_URL = 'http://www.omdbapi.com';
 
   // Add this helper function at the top of your component
