@@ -9,7 +9,7 @@ const AboutUs = () => {
           Feeling bored? We’ve got you covered! 🎉
         </p>
         <p className="text-lg mb-4">
-          Welcome to <span className="font-semibold">[Your Website Name]</span>, your ultimate boredom-buster! Whether you're in the mood for a laugh, a challenge, or just something fun to do, we’ve packed this place with everything you need to kill time in the most entertaining way possible.
+          Welcome to <span className="font-semibold">Fun Flow</span>, your ultimate boredom-buster! Whether you're in the mood for a laugh, a challenge, or just something fun to do, we’ve packed this place with everything you need to kill time in the most entertaining way possible.
         </p>
         <div className="mt-6 space-y-6 text-left">
           <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
