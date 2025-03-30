@@ -19,7 +19,7 @@ const Zone = () => {
             <div className='flex justify-center p-10'>
               <div className='text-center'>
                 <h1 className='text-3xl font-semibold'>Books</h1>
-                <p className='mt-4 text-[18px]'>Discover the latest blockbuster movies.</p>
+                <p className='mt-4 text-[18px]'>Find books that amazes you.</p>
               </div>
             </div>
           </Link>
@@ -27,7 +27,7 @@ const Zone = () => {
             <div className='flex justify-center p-10'>
               <div className='text-center'>
                 <h1 className='text-3xl font-semibold'>Games</h1>
-                <p className='mt-4 text-[18px]'>Discover the latest blockbuster movies.</p>
+                <p className='mt-4 text-[18px]'>Games that challenges your knowledge</p>
               </div>
             </div>
           </Link>
@@ -35,7 +35,7 @@ const Zone = () => {
             <div className='flex justify-center p-10'>
               <div className='text-center'>
                 <h1 className='text-3xl font-semibold'>Memes</h1>
-                <p className='mt-4 text-[18px]'>Discover the latest blockbuster movies.</p>
+                <p className='mt-4 text-[18px]'>Have some laugh</p>
               </div>
             </div>
           </Link>
@@ -43,7 +43,7 @@ const Zone = () => {
             <div className='flex justify-center p-10'>
               <div className='text-center'>
                 <h1 className='text-3xl font-semibold'>Theme Parks</h1>
-                <p className='mt-4 text-[18px]'>Discover the latest blockbuster movies.</p>
+                <p className='mt-4 text-[18px]'>Find places for leisure</p>
               </div>
             </div>
           </Link>
@@ -51,7 +51,7 @@ const Zone = () => {
             <div className='flex justify-center p-10'>
               <div className='text-center'>
                 <h1 className='text-3xl font-semibold'>Stories</h1>
-                <p className='mt-4 text-[18px]'>Discover the latest blockbuster movies.</p>
+                <p className='mt-4 text-[18px]'>Find Immersive and masala stories</p>
               </div>
             </div>
           </Link>
