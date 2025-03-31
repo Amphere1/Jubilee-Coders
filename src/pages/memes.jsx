@@ -4,17 +4,15 @@ export default function MemePage() {
   const [memes, setMemes] = useState([]);
 
   useEffect(() => {
-    fetch("https://www.reddit.com/r/memes+IndiaTech/new.json?limit=200")
+    fetch("https://api.imgflip.com/get_memes")
       .then((res) => res.json())
-      .then((data) =>
-        setMemes(
-          data.data.children.map((post) => ({
-            id: post.data.id,
-            title: post.data.title,
-            url: post.data.url,
-          }))
-        )
-      )
+      .then((data) => {
+        if (data.success) {
+          setMemes(data.data.memes);
+        } else {
+          console.error("Error fetching memes:", data.error_message);
+        }
+      })
       .catch((error) => console.error("Error fetching memes:", error));
   }, []);
 
@@ -32,13 +30,13 @@ export default function MemePage() {
             <div className="w-full bg-gray-900 flex items-center justify-center">
               <img
                 src={meme.url}
-                alt={meme.title}
+                alt={meme.name}
                 className="w-full max-h-64 object-contain"
-                loading="lazy" // Lazy loading for better performance
+                loading="lazy"
               />
             </div>
             <div className="p-4 bg-gray-700 text-center text-sm font-medium text-gray-200 rounded-b-lg text-ellipsis overflow-hidden whitespace-nowrap">
-              {meme.title}
+              {meme.name}
             </div>
           </div>
         ))}
